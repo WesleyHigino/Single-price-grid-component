@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{ 
+    
+    background-color: hsl(204, 43%, 93%);
+    font-family: 'Karla', sans-serif;
+    Font-size: 16px;
+}
+main{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    top: 70px;
+    width: 300px;
+    border-radius: 10px;
+
+}
+.sectionDescription{
+    background-color: white;
+    border-radius:5px 5px 0 0;
+}
+.description{
+    margin: 20px;
+    
+}
+.descriptionTitle{
+    color: hsl(179, 62%, 43%);
+    
+}
+.descriptionSubtitle{
+    margin-top: 25px;
+    color: hsl(71, 73%, 54%);
+}
+.descriptionText{
+    margin-top: 25px;
+    color: hsl(218, 22%, 67%);
+    line-height:1.5;
+   
+}
+
+.sectionInfo{
+    background-color: hsl(179, 62%, 43%);
+}
+.info{
+    margin: 20px;
+    color: white;
+     
+}
+.infoPrice ul{
+    margin-top: 20px;
+    display: flex;
+    list-style: none;   
+}
+.infoPrice .price{
+    font-size: 35px;
+    font-weight: 700;
+}
+.infoPrice ul .priceDescription{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    color:hsl(204, 43%, 93%);
+}
+.infoPrice p{
+    margin-top: 8px;
+}
+.infoSign{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+.infoSign button{
+    
+    width: 250px;
+    height: 45px;
+    border-radius: 7px ;
+    background-color: hsl(71, 73%, 54%);
+    font-weight: 700;
+    border: none;
+    color:white;
+    
+}
+.sectionWhyUs{
+    background-color: rgba(42, 178, 176, 0.74);
+    border-radius: 0 0 5px 5px;
+}
+.whyUs{
+    color: white;
+    margin: 20px;
+}
+.whyUs p{
+    color:hsl(204, 43%, 93%);
+    margin-top: 20px;
+    line-height:1.2;
+}
+@media screen and (min-width:695px) {
+ 
+    main{
+        display: grid;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        grid-template-columns: 330px 330px;
+        grid-template-rows: 200px 260px ;
+        grid-template-areas: "description description"
+                                   "info whyUs";
+    }
+    .sectionDescription{
+        grid-area: description;
+
+    }
+    .description{
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-top: 30px;
+    }
+    .description p {
+        margin-top: -15px;
+    }
+    
+    .sectionInfo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0 0 0 5px;
+        grid-area: info;
+
+    }
+    .sectionWhyUs{
+        display: flex;
+        align-items: center;
+        border-radius: 0 0 5px 0;
+        grid-area: whyUs;
+    }
+    .whyUs{
+        margin: 40px;
+        
+    }
+    
+}
