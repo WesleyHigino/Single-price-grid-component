@@ -1,5 +1,5 @@
 # Single price grid component
-
+https://gridcomponent01.netlify.app/
 
 ## Sobre o projeto
 
@@ -53,11 +53,12 @@ Esta é uma solução do frontend Mentor com o objetivo de construir um componen
 ## Implantação em produção
 
 - Front end web: Netlify
+  https://gridcomponent01.netlify.app/
 
 # Challenge
 
 - Frontend Mentor
-  
+  https://www.frontendmentor.io/solutions/flex-box-grid-layout-yqIEm2CYs
   
 # Meu aprendizado neste projeto
   
